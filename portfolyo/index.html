@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Portfolyo | Hamit Deveci</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Hamit<span>Deveci</span></div>
+        <ul class="nav-links">
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#yetenekler">Yetenekler</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <button id="tema-degistir" class="tema-btn">🌓</button>
+    </nav>
+
+    <header id="hakkimda" class="bolum">
+        <div class="profil-kart">
+            <img src="images/profil.jpg" alt="Hamit Deveci" class="profil-foto">
+            <h1>Merhaba, Ben <span id="yazi-efekti"></span></h1>
+            <p>Bilgisayar Programcılığı öğrencisiyim. Kariyer hedefim modern web teknolojileri üzerinde uzmanlaşarak kullanıcıya uygun projeler geliştirmek.</p>
+        </div>
+    </header>
+
+    <section id="yetenekler" class="bolum">
+        <h2>Yetenekler & Eğitim</h2>
+        <div class="kart-container">
+            <div class="egitim-detay">
+                <h3>Eğitim Sürecim</h3>
+                <p>Şu an <strong>Bilgisayar Programcılığı</strong> bölümünde öğrencilik hayatıma devam ediyorum. Okulda gördüğüm <strong>İnternet Programcılığı</strong> gibi derslerde temelleri en iyi şekilde kavramaya gayret ediyorum.</p>
+                <p style="margin-top: 10px;">Öğrendiğim her yeni bilgiyi pratiğe dökmeye çalışıyor, akademik eğitimimi kişisel projelerle desteklemek için uğraşıyorum.</p>
+            </div>
+            
+            <div class="yetenek-liste">
+                <h3>Gelişim Alanlarım</h3>
+                <p>Modern web dünyasına adım atarken <strong>HTML5 ve CSS3</strong> yapısını derinlemesine anlamaya çalışıyorum; tasarımları daha şık ve düzenli hale getirmek için sürekli yeni teknikler deniyorum.</p>
+                <p style="margin-top: 10px;"><strong>JavaScript</strong> tarafında ise mantığı çözmek ve daha dinamik sayfalar üretebilmek adına bolca pratik yapıyorum. Hatalardan öğrenerek daha iyi kod yazmak için çabalıyorum.</p>
+                <p style="margin-top: 10px;">Henüz yolun başında olduğumu bilerek, her gün yeni bir şeyler öğrenmek ve kendimi bir adım öteye taşımak için vakit harcıyorum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeler" class="bolum">
+        <h2>Proje Galerisi</h2>
+        <div class="filtre-grubu">
+            <button class="filtre-btn aktif" onclick="projeleriFiltrele('hepsi', this)">Hepsi</button>
+            <button class="filtre-btn" onclick="projeleriFiltrele('Web', this)">Web Projeleri</button>
+            <button class="filtre-btn" onclick="projeleriFiltrele('Mobil', this)">Mobil Projeler</button>
+        </div>
+        <div id="proje-listesi" class="galeri-izgara"></div>
+    </section>
+
+    <footer id="iletisim" class="bolum">
+        <h2>İletişim</h2>
+        <div class="iletisim-kart">
+            <p>Aşağıdaki kanallar üzerinden bana ulaşabilirsiniz:</p>
+            <div class="sosyal-ikonlar">
+                <a href="mailto:hamitdeveci7@gmail.com" class="ikon">✉️ E MAİL</a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+                <a href="https://github.com/hamitdeveci63" target="_blank" class="ikon">💻 GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
